@@ -1,0 +1,112 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background-image: linear-gradient(
+    135deg,
+    rgb(68, 68, 145),
+    rgb(126, 51, 126)
+  );
+  padding: 10px;
+}
+
+.head {
+  width: 100%;
+  max-width: 450px;
+  background-color: antiquewhite;
+  margin: 100px auto 20px;
+  border-radius: 10px;
+  padding: 40px 30px;
+}
+
+.head h2 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.head img {
+  width: 30px;
+  margin-left: 0.5rem;
+}
+.user {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(199, 191, 191);
+  border-radius: 30px;
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+.user input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  padding: 10px;
+}
+.user button {
+  border: none;
+  outline: none;
+  padding: 16px 40px;
+  background-color: rgb(167, 17, 17);
+  color: white;
+  font-size: 16px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+ul li {
+  list-style: none;
+  position: relative;
+  font-size: 16px;
+  padding: 10px 15px 12px 35px;
+  user-select: none;
+  cursor: pointer;
+}
+ul li::before {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-image: url(unchecked.png);
+  background-size: cover;
+  background-position: center;
+  top: 6px;
+  left: 1px;
+}
+ul li.checked {
+  color: gray;
+  text-decoration: line-through;
+}
+ul li.checked::before {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-image: url(checked.png);
+  background-size: cover;
+  background-position: center;
+  top: 6px;
+  left: 1px;
+}
+ul li span {
+  position: absolute;
+  right: 0;
+  top: 5px;
+  height: 40px;
+  width: 40px;
+  font-size: 15px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+}
+
+ul li span:hover {
+  background-color: rgb(180, 172, 172);
+}
